@@ -1,0 +1,14 @@
+PLEASE PUT YOUR NAME ON WHAT YOU WANT TO WORK ON AND REMEMBER TO PUSH IT BACK IN
+
+
+Tasks : 1 Get thread count with normal threads and  
+        2 Get quality of the fabric. NORMAL 
+        3 Get thread count with intertwied threads
+        4 Get quality of the fabric. INTERTWINED
+        5 Detect potential failues in the fabric. ( GET HOLES THAT ARE TOO BIG OR TOO SMALL. )
+        6 Work with different colored fabric (SEGMENTATION)
+
+
+
+Team Member: 
+             Enrique Calderon 1 and 2
