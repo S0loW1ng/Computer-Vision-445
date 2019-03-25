@@ -1,6 +1,5 @@
-
-I= imread('INTERT/1.jpg');
-imshow(I);
+function strings = intert(I)
+ 
 Igry = rgb2gray(I);
 
 J = histeq(Igry);
@@ -20,7 +19,7 @@ figure ,imshow(E); title("Lines");
 % lines = houghlines(E,T,R,peaks,'FillGap',20,'MinLength',1);
 s = size(E);
 c1 = 0;
-c2 = 0;
+% making sure that we add padding
 D = padarray(E,[1 1],'both');
 o = s(1);
 for i = 1:s(2)
@@ -29,4 +28,6 @@ for i = 1:s(2)
     end
 end
 
-Strings = c1/2;
+s = c1/2;
+strings = s;
+end
