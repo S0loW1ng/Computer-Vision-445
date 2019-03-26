@@ -1,4 +1,4 @@
-function strings = intert(I)
+function strings = InterFunction(I)
  
 Igry = rgb2gray(I);
 
