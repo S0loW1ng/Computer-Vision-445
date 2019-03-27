@@ -19,11 +19,12 @@ imshow(I5);
 
 [r,c,layers] = size(I5);
 
-left = I5(1:2,1:c);
-right = I5(r-1:r,1:c);
+left = I5(1:r,1:2);
+right = I5(1:r,c-1:c);
 [B,leftItems] = bwlabel(left,8);
+[c,rightItems] = bwlabel(right,8);
 
-[C,rightItems] = bwlabel(right,8);
+
 
 I6 = zeros(r+2,c);
 I6 = 1 - I6;
@@ -31,12 +32,7 @@ I6(2:r+1,1:c) = I5;
 imshow(I6);
 [A,totalItems] = bwlabel(I6,8);
 
-if leftItems == 0
-    totalItems = totalItems-1;
-end
-if rightItems == 0
-    totalItems = totalItems-1;
-end
+if left
 
 
 horizontalThreadCount = totalItems;

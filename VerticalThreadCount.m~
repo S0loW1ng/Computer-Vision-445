@@ -20,10 +20,10 @@ imshow(I5);
 
 [r,c,layers] = size(I5);
 
-top = I5(1:r,1:2);
+top = I5(1:2,1:c);
 bottom = I5(1:r,c-1:c);
-[B,topItems] = bwlabel(top,8);
-[C,bottomItems] = bwlabel(bottom,8);
+[B,leftItems] = bwlabel(left,8);
+[c,rightItems] = bwlabel(right,8);
 
 
 I6 = zeros(r,c+2);
@@ -31,14 +31,7 @@ I6 = 1 - I6;
 I6(1:r,2:c+1) = I5;
 imshow(I6);
 [A,totalItems] = bwlabel(I6,8);
-
-if topItems  ==0
-    totalItems = totalItems-1;
-end
-if bottomItems == 0
-    totalItems = totalItems-1;
-end
-
 vertCount = totalItems;
+
 end
 
