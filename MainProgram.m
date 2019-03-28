@@ -1,4 +1,4 @@
-I = imread('24.jpg');
+I = imread('25.jpg');
 
 %We get the image clean Eunice and Yue
 % we detec if there are holes or not Adrian
@@ -12,5 +12,5 @@ if( b == 1)
     hori = HorizontalThreadCount(I);
     %if not
     %count interThreads
-    inter = InterFunction(I)
+    inter = InterFunction(I);
 end
