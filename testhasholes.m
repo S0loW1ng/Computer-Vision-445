@@ -1,4 +1,6 @@
-function b = hasHoles(I)
+clear all;
+%I = imread('22.jpg');
+I = imread('INTERT/1.jpg');  
   Ipross = 1-im2bw(I);
     figure, imshow(Ipross);
     % clean the holes
@@ -68,4 +70,3 @@ function b = hasHoles(I)
     end
     %At the end, if the output is 1 there are approppriate holes, if it is
     %0 there are no appropriate holes.
-end

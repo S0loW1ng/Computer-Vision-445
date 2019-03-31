@@ -1,6 +1,6 @@
 function strings = InterFunction(I)
  
-Igry = rgb2gray(I);
+Igry = I;
 
 J = histeq(Igry);
 %figure, imshow(J);

@@ -1,5 +1,4 @@
-close all;
-I = imread('INTERT/1.jpg');
+
 %I = imread('25.jpg');
 
 %We get the image clean Eunice and Yue
